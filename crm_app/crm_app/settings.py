@@ -11,7 +11,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config('DJANGO_SECRET_KEY')
+SECRET_KEY = config('DJANGO_SECRET_KEY') #stored in .env file
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -70,7 +70,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'crm_db', #database name
         'USER': 'root', #mysql username (default)
-        'PASSWORD': 'mysqlpassword123', #mysql password
+        'PASSWORD': config('MYSQL_PASSWORD'), #mysql password stored in .env file
         'HOST': 'localhost',
         'PORT': '3306', #default port
         

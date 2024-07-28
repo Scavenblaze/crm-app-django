@@ -10,6 +10,7 @@ It has a Register and a Login page for authentication.
 
 ## Installation
 Install packages using `pip install -r requirements.txt`.  
+Run `crm_db.py` to create a schema in MySQL.  
 Run the app using `python manage.py runserver`.
 </br></br>
 
